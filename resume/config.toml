@@ -1,3 +1,205 @@
-baseURL = "http://example.org/"
+# Page settings
+
+baseURL = "https://mattstrong.com/resume/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = ""
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+    author = "Matthew Strong"
+    description = "My Resume"
+
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Matthew Strong"
+        tagline = "Software Engineer"
+        avatar = "me.png"
+
+    [params.contact]
+        enable = true
+        location = "Milwaukee, WI"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:14142125677"
+        text = "1.414.212.5677"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:matt@mattstrong.com"
+        text = "matt@mattstrong.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://mattstrong.com"
+        text = "www.mattstrong.com"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Programming Languages"
+        [[params.skills.list.items]]
+        details = "C++, Java, Python, Bash, Javascript, HTML/CSS"
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "JavaScript/Angular/React/Vue"
+        [[params.skills.list.items]]
+        details = "Python/Ruby/PHP"
+        [[params.skills.list.items]]
+        details = "Node.js/ASP.NET"
+        [[params.skills.list.items]]
+        details = "PostgreSQL/MySQL"
+        [[params.skills.list.items]]
+        details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "Design and implement database structures"
+        [[params.skills.list.items]]
+        details = "Lead and deliver complex software systems"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Strong problem solver"
+        [[params.skills.list.items]]
+        details = "Good time management"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "BSc Computer Engineering"
+        university = "Marquette University"
+        honors = "magna cum launde"
+        dates = "2005 - 2010"
+
+    [params.awards]
+        enable = false
+
+    [params.certifications]
+        enable = true
+
+        [[params.certifications.list]]
+        name = "Neural Networks and Deep Learning"
+        body = "deeplearning.ai"
+        date = "2019"
+        [[params.certifications.list]]
+        name = "Linux Kernel Driver Development"
+        body = "Dualos"
+        date = "2019"
+
+    [params.languages]
+        enable = false
+
+    [params.interests]
+        enable = false
+
+    [params.summary]
+        enable = true
+        text = """I am an experienced and motivated software engineer with 10 years of development experience.  with , experience software engineer with
+                Successfully Leading advanced technology projects within the healthcare space
+
+                I have a passion for modern software architecture and design, staunch advocate of clean coding practice
+
+                Adept at tacking difficult technical problems
+                Have broad experience in many technologies that make me adept at tacking difficult technical problems
+                no problem that is too difficult and full stack knowledge and capable of root causing debugging complex kernel and board level debugging techniques.
+                """
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Staff Software Engineer,<br>Senior Software Engineer"
+        title2 = "Senior Software Engineer"
+        dates = "2019 - 2020<br>2016 - 2019"
+        company = "XRay Engineering | GE Healthcare"
+        details = """"""
+        [[params.experience.list.items]]
+        details = "Lorem ipsum dolor sit amet, consectetuer."
+        [[params.experience.list.items]]
+        details = "Aenean commodo ligula eget dolor."
+        [[params.experience.list.items]]
+        details = "Etiam ultricies nisi vel augue."
+        [[params.experience.list.items]]
+        details = "Aenean commodo ligula eget dolor."
+        [[params.experience.list.items]]
+        details = "Etiam ultricies nisi vel augue."
+
+        [[params.experience.list]]
+        title = "Lead Software Engineer,<br>Software Engineer"
+        dates = "2014 - 2016<br>2011 - 2014"
+        company = "PET/CT Engineering | GE Healthcare"
+        details = """Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+        HPC compute platform for PET Time-of-flight iterative osem reconstruction algorithms. OpenCL
+        Specializing in Linux kernel level performance optimizations
+        hardware benchmarking and disk caching disk technologies (RAID)
+
+        15 to 21 million improvement to enable high sensitivity PET-MR solid state photomultiplier
+        sorting and histogramming pipeline capable of processing 21 PET TOF million coincidence events per second ()
+
+        Developing both software and hardware caching mechanisms for optimizal write throughput
+        advanced disk technogies including solid state disk
+        PET reconstruction and 4D TOF histogramming
+        HDF5
+
+        """
+
+        [[params.experience.list.items]]
+        details = "Lorem ipsum dolor sit amet, consectetuer."
+        [[params.experience.list.items]]
+        details = "Aenean commodo ligula eget dolor."
+        [[params.experience.list.items]]
+        details = "Etiam ultricies nisi vel augue."
+        [[params.experience.list.items]]
+        details = "Aenean commodo ligula eget dolor."
+        [[params.experience.list.items]]
+        details = "Etiam ultricies nisi vel augue."
+
+        [[params.experience.list]]
+        title = "Early Identification Co-op Program"
+        dates = "2007 - 2009"
+        company = "GE Healthcare"
+        details = "As a GEHC Early Identification (EID) program participant, I completed 4 semester long rotations in different healthcare engineering modalities, including Computed Tomography, Patient Monitoring, and technology tools teams. Upon program graduation, I received the W. D. Bliss Outstanding Co-op Award for my contributions to the organization."
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "PET Raw Data Format"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+        [[params.projects.list]]
+        title = "Project Hubble"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+        [[params.projects.list]]
+        title = "Project Praesent"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+    [params.information]
+        enable = false
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/strong-matthew"
+        title = "strong-matthew"
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/matthewstrong"
+        title = "matthewstrong"
