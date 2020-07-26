@@ -1,3 +1,6 @@
 [submodule "resume/themes/hugo-devresume-theme"]
 	path = resume/themes/hugo-devresume-theme
 	url = https://github.com/matthewstrong/hugo-devresume-theme.git
+[submodule "home/themes/somrat"]
+	path = home/themes/somrat
+	url = https://github.com/matthewstrong/somrat.git
