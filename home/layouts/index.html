@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- =============================
+      Start Header
+    =============================== -->
+<section class="header" id="home">
+  <script type="application/javascript">
+    function btnevent(name) {
+      ga('send', 'event', 'button', 'click', name);
+    }
+  </script>
+  {{ with $data.homepage.hero }}
+  <div class="owl-carousel owl-full-width owl-theme" id="background-slide">
+    {{ range .slider_image }}
+    <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
+    {{ end }}
+  </div>
+  <div class="credit" style="z-index: 20;">
+    <ul class="footer-icons list-inline">
+      {{ range $.Site.Params.social }}
+      <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row content">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
+        <div class="head-holder">
+          <h1 class="introduction">{{ .title | markdownify | emojify }}</h1>
+          <div class="animated-text">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper">
+                {{ range $index, $elements:= .occupations }}
+                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . }}</b>
+                {{ end }}
+              </span>
+            </strong>
+          </div>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a class="hireMe" href="{{ .link }}" onclick="btnevent('hireme');">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- =============================
+       End Header
+    =============================== -->
+
+<a href="#home" class="scroll-up hvr-icon-up"></a>
+
+{{ end }}

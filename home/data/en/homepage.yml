@@ -1,0 +1,26 @@
+########################## hero area ##########################
+hero:
+  title : "I'm Matthew Strong"
+
+  # animated text loop
+  occupations:
+    - "Engineer."
+    - "Maker of things."
+    - "Breaker of things."
+
+  # slider background image loop
+  slider_image:
+    - "images/slider/191.jpg"
+
+  # button
+  button:
+    enable : true
+    label : "HIRE ME"
+    link : "resume"
+
+####################### Full screen navigation #####################
+fullscreen_nav:
+  enable : true
+  bg_image : "images/backgrounds/full-nav-bg.jpg"
+  first_name : "Matthew"
+  last_name : "Strong"
