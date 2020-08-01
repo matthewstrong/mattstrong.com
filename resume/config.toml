@@ -4,7 +4,7 @@ baseURL = "https://mattstrong.com/resume/"
 languageCode = "en-us"
 title = ""
 theme = "hugo-devresume-theme"
-googleAnalytics = "UA-XXXXXXX-Y"
+googleAnalytics = "UA-55412393-1"
 
 [params]
     author = "Matthew Strong"
