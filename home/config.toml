@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://146.71.78.141"
+baseURL = "https://mattstrong.com/"
 title = "mattstrong.com"
 theme = "somrat"
 googleAnalytics = "UA-55412393-1"

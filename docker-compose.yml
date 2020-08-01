@@ -1,18 +1,20 @@
 version: '3'
 
 services:
-
-  web:
-    build: .
-    restart: always
-    environment:
-      - VIRTUAL_HOST=localhost
-    #  - VIRTUAL_HOST=mattstrong.com,www.mattstrong.com
-    #  - LETSENCRYPT_HOST=mattstrong.com,www.mattstrong.com
-    #  - LETSENCRYPT_EMAIL=matt@mattstrong.com
-    networks:
-      - vps-config_proxy-tier
+    web:
+        build:
+            context: .
+            args:
+                baseurl: mattstrong.com
+        restart: always
+        environment:
+            - VIRTUAL_HOST=mattstrong.com,www.mattstrong.com
+            - LETSENCRYPT_HOST=mattstrong.com,www.mattstrong.com
+            - LETSENCRYPT_EMAIL=matt@mattstrong.com
+            # - VIRTUAL_HOST=localhost
+        networks:
+            - vps-config_proxy-tier
 
 networks:
-  vps-config_proxy-tier:
-    external: true
+    vps-config_proxy-tier:
+        external: true
