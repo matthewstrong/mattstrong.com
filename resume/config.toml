@@ -51,6 +51,8 @@ googleAnalytics = "UA-55412393-1"
         [[params.skills.list]]
         title = "Technical"
         [[params.skills.list.items]]
+        details = "Linux development and kernel debugging"
+        [[params.skills.list.items]]
         details = "Modern C++ design / STL"
         [[params.skills.list.items]]
         details = "Object-oriented design"
@@ -60,7 +62,6 @@ googleAnalytics = "UA-55412393-1"
         details = "Linux kernel debugging"
         [[params.skills.list.items]]
         details = "C++ microservice design"
-
         [[params.skills.list.items]]
         details = "Unit and component test frameworks"
         [[params.skills.list.items]]
@@ -110,7 +111,8 @@ googleAnalytics = "UA-55412393-1"
 
     [params.summary]
         enable = true
-        text = """I am an experienced and highly motivated software engineer with over 10 years of hands on experience creating and implementing software designs and leading advanced technology projects. I have a passion for modern software design practices and working with cutting edge technologies. I have wide ranging experiences in product design, working closely with customers, systems engineers, researchers, and developers to produce many innovative and life-saving products in the healthcare industry."""
+        text = """Software leader with 10+ years experience in the medical device industry. Passionate about using cutting edge software technologies and partnering with customer, research scientists, and systems engineers to create innovative and life-saving healthcare products. Experience in leading teams and projects in order to ensure productive cross-team communications and generate customer-focused solutions within business timelines and constraints. Demonstrated ability to focus on the wholistic solution, including exploring new software practices, understanding hardware-software interfaces and system-level design, and prioritizing usability and risk management in design process.
+        """
 
     [params.experience]
         enable = true
@@ -121,12 +123,12 @@ googleAnalytics = "UA-55412393-1"
         company = "XRay Engineering | GE Healthcare"
         title_alt = "Senior Software Engineer"
         dates_alt = "2016 - 2019"
-        details = """Software developer and team lead working on new product development for fixed and mobile xray products. I lead a wide array of initiatives across software subsystems, focused on integrating new xray detector technologies and improving software quality and reliability, as well as evaluating new technologies in AI and computer vision."""
+        details = """Software team lead and developer working on new product development for fixed and mobile xray products. I lead a wide array of initiatives across software subsystems, focused on integrating new xray detector technologies and improving software quality and reliability, as well as evaluating new technologies in AI and computer vision."""
 
         [[params.experience.list.items]]
-        details = "Collaborated with third-party detector vendors for integrating their SDKs into xray products. Implemented a detector abstraction API based on ZMQ communication framework to facilitate quicker integration of additional detectors and improve reliability."
+        details = "Led technical collaboration with third-party detector vendors for integrating their SDKs into xray products. Implemented a detector abstraction API based on ZMQ communication framework to facilitate quicker integration of additional detectors and improve reliability."
         [[params.experience.list.items]]
-        details = "Redesigned the product network architecture using network namespaces and layer 2 hardware / 802.1Q VLAN tagging. Developed device monitoring software using SNMP to remotely sense physical connect/disconnect of xray detectors."
+        details = "Redesigned the product network architecture using network namespaces and layer 3 hardware / 802.1Q VLAN tagging. Developed device monitoring software using SNMP to remotely sense physical connect/disconnect of xray detectors."
         [[params.experience.list.items]]
         details = "Developed prototypes for first on-device artificial intelligence algorithm for detecting Pneumothorax in patient images. Worked closely with data scientists to benchmark and optimize model performance."
         [[params.experience.list.items]]
